@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "pnpm db:seed && next dev",
     "dev:turbo": "pnpm db:seed && next dev --turbo",
-    "build": "pnpm db:push && pnpm db:seed && next build",
+    "build": "next build",
+    "postinstall": "pnpm db:push",
     "build:check": "tsc --noEmit",
     "start": "next start",
     "lint": "next lint",
