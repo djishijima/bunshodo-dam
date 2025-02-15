@@ -6,4 +6,4 @@ pnpm db:migrate
 
 # Build the application
 echo "Building the application..."
-pnpm build
+NODE_OPTIONS="--max_old_space_size=4096" pnpm build
